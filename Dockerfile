@@ -20,6 +20,6 @@ COPY pyproject.toml uv.lock ./
 RUN uv sync --frozen
 
 COPY . .
-COPY cookies.txt .
+COPY anony/cookies.txt /app/anony/cookies.txt
 
 CMD ["bash", "start"]
